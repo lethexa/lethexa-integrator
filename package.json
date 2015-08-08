@@ -6,9 +6,6 @@
   "scripts": {
     "test": "grunt test"
   },
-  "publishConfig": {
-    "registry": "http://npm.home.web:4873/"
-  },
   "repository": {
     "type": "git",
     "url": "git://git.home.web/base/js/lethexa-rungekutta"
