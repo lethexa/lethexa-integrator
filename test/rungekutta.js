@@ -5,7 +5,7 @@ var integrator = require('../lib/rungekutta');
 describe('RungeKutta', function () {
     describe('#nextStep()', function () {
         it('should return the correct result 1', function () {
-		var rungekutta = new integrator.RungeKutta( function(x, y) {
+		var rungekutta = new integrator.RungeKutta1Ord( function(x, y) {
 			return 3 * x*x * y;
 		}); 
 		var x0 = 1, y0 = 2, h = 0.1;
