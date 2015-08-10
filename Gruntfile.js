@@ -13,7 +13,7 @@ module.exports = function (grunt) {
 		url: '<%= pkg.homepage %>',
                 options: {
 		    exclude: 'build,dist,doc',
-                    paths: ['lib/'],
+                    paths: ['./', 'lib/'],
                     outdir: 'doc/'
                 }
             }

@@ -1,19 +1,33 @@
 This is a very simple implementation of the Runge-Kutta-integation method.
 
 
-Usage
------
+Solve 1st order differential equation
+-------------------------------------
+
 	var integrator = require('lethexa-rungekutta');
 
-	var rungekutta = new integrator.RungeKutta( function(x, y) {
+	var rungekutta1Order = new integrator.RungeKutta1Order( function(x, y) {
 		return 3 * x*x * y;
 	});
 
 	var x0 = 1, y0 = 2, h = 0.1;
-
-	var result = rungekutta.nextStep(x0, y0, h);
-
+	var result = rungekutta1Order.nextStep(x0, y0, h);
 	console.log(result);
+
+
+Solve 2st order differential equation
+-------------------------------------
+
+	var integrator = require('lethexa-rungekutta');
+	
+	var rungekutta = new integrator.RungeKutta2Order( function(x, y, dy) {
+		return 2*y + dy;
+	});
+
+	var x0 = 0, y0 = 3, dy0 = 0, h = 0.1;
+	var result = rungekutta.nextStep(x0, y0, dy0, h);
+	console.log(result);
+
 
 Test
 ----
