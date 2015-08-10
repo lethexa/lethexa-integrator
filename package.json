@@ -1,13 +1,13 @@
 {
   "name": "lethexa-rungekutta",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Runge-Kutta integration method",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
   },
   "publishConfig": {
-    "registry": "http://registry.npmjs.org/"
+    "registry": "http://npm.home.web:4873/"
   },
   "repository": {
     "type": "git",
