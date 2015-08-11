@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://git.home.web/base/js/lethexa-rungekutta"
+    "url": "git://git.home.web/base/js/lethexa-rungekutta.git"
   },   
   "keywords": [
     "Integration", 
     "Runge-Kutta"
   ],
-  "author": "lethexa",
+  "author": "Tim Leerhoff",
   "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.5",
@@ -28,6 +28,6 @@
   "dependencies": {
   },
   "maintainers": [{
-      "name": "lethexa"
+      "name": "Tim Leerhoff"
   }]
 }
