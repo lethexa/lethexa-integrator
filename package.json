@@ -1,6 +1,6 @@
 {
   "name": "lethexa-rungekutta",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "description": "Runge-Kutta integration method",
   "main": "index.js",
   "scripts":  {
