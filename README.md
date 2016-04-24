@@ -2,6 +2,26 @@ lethexa-integrator
 ==================
 
 This is a very simple implementation of the integation methods Euler, Runge-Kutta first order and second order.
+You can provide your own algebra to the integrator for example to integrate vectors with existing vector libraries.
+
+For this purpose implement the algebra (add, mulScalar) in an object:
+
+	var MathFunc = {
+		add: function(x, y) {
+			return x + y;
+		},
+
+		mulScalar: function(x, s) {
+			return x * s;
+		}
+	};
+
+	var euler = new integrator.Euler( function(x, y) {
+                return 3 * x*x * y;
+        }, MathFunc);
+	...
+
+
 
 
 Solve 1st order differential equation using Euler method
@@ -9,12 +29,12 @@ Solve 1st order differential equation using Euler method
 
         var integrator = require('lethexa-integrator');
 
-        var rungekutta1Order = new integrator.Euler( function(x, y) {
+        var euler = new integrator.Euler( function(x, y) {
                 return 3 * x*x * y;
         });
 
         var x0 = 1, y0 = 2, h = 0.1;
-        var result = rungekutta1Order.nextStep(x0, y0, h);
+        var result = euler.nextStep(x0, y0, h);
         console.log(result);
 
 
