@@ -33,10 +33,10 @@ Solve 1st order differential equation using Euler method
                 return 3 * x*x * y;
         });
 
-        var input = {
+	var input = {
 		x: 1,
 		y: 2
-	}
+	};
 	var h = 0.1;
         var result = euler.nextStep(input, h);
         console.log(result);
@@ -54,7 +54,7 @@ Solve 1st order differential equation using Runge-Kutta
 	var input = {
 		x: 1,
 		y: 2
-	}
+	};
 	var h = 0.1;
 	var result = rungekutta1Order.nextStep(input, h);
 	console.log(result);
@@ -73,7 +73,7 @@ Solve 2st order differential equation using Runge-Kutta
 		x: 0, 
 		y: 3,
 		dy: 0
-	}
+	};
 	var h = 0.1;
 	var result = rungekutta.nextStep(input, h);
 	console.log(result);
