@@ -1,4 +1,4 @@
-{
+{ 
   "name": "lethexa-integrator",
   "main": "lib/integrators.js",
   "version": "0.2.0",
