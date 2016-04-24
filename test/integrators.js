@@ -1,6 +1,6 @@
 var assert = require('assert');
-var integrator = require('../lib/rungekutta');
-var integrator = require((process.env.APP_DIR_FOR_CODE_COVERAGE || '../lib/') + 'rungekutta');
+// var integrator = require('../lib/integrators');
+var integrator = require((process.env.APP_DIR_FOR_CODE_COVERAGE || '../lib/') + 'integrators');
 
 
 

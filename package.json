@@ -1,18 +1,19 @@
 {
-  "name": "lethexa-rungekutta",
-  "version": "0.1.0",
-  "description": "Runge-Kutta integration method",
+  "name": "lethexa-integrator",
+  "version": "0.2.0",
+  "description": "Integration methods for differntial equations.",
   "main": "index.js",
   "scripts":  {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git://git.home.web/base/js/lethexa-rungekutta.git"
+    "url": "git@github.com:lethexa/lethexa-integrator.git"
   },   
   "keywords": [
     "Integration", 
-    "Runge-Kutta"
+    "Runge-Kutta",
+    "Euler"
   ],
   "author": "Tim Leerhoff",
   "license": "MIT",

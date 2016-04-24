@@ -1,0 +1,30 @@
+{
+  "name": "lethexa-integrator",
+  "main": "lib/integrators.js",
+  "version": "0.2.0",
+  "authors": [
+    "Tim Leerhoff <tleerhof@web.de>"
+  ],
+  "description": "Integration methods for differntial equations.",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "Runge-Kutta",
+    "Euler",
+    "Integration"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "doc",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "*.sh"
+  ]
+}
