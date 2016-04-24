@@ -1,7 +1,7 @@
 { 
   "name": "lethexa-integrator",
   "main": "lib/integrators.js",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "authors": [
     "Tim Leerhoff <tleerhof@web.de>"
   ],
