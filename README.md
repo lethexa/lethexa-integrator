@@ -1,10 +1,27 @@
-This is a very simple implementation of the Runge-Kutta-integation method.
+lethexa-integrator
+==================
+
+This is a very simple implementation of the integation methods Euler, Runge-Kutta first order and second order.
 
 
-Solve 1st order differential equation
--------------------------------------
+Solve 1st order differential equation using Euler method
+--------------------------------------------------------
 
-	var integrator = require('lethexa-rungekutta');
+        var integrator = require('lethexa-integrator');
+
+        var rungekutta1Order = new integrator.Euler( function(x, y) {
+                return 3 * x*x * y;
+        });
+
+        var x0 = 1, y0 = 2, h = 0.1;
+        var result = rungekutta1Order.nextStep(x0, y0, h);
+        console.log(result);
+
+
+Solve 1st order differential equation using Runge-Kutta
+-------------------------------------------------------
+
+	var integrator = require('lethexa-integrator');
 
 	var rungekutta1Order = new integrator.RungeKutta1Order( function(x, y) {
 		return 3 * x*x * y;
@@ -15,10 +32,10 @@ Solve 1st order differential equation
 	console.log(result);
 
 
-Solve 2st order differential equation
--------------------------------------
+Solve 2st order differential equation using Runge-Kutta
+-------------------------------------------------------
 
-	var integrator = require('lethexa-rungekutta');
+	var integrator = require('lethexa-integrator');
 	
 	var rungekutta = new integrator.RungeKutta2Order( function(x, y, dy) {
 		return 2*y + dy;
@@ -31,12 +48,12 @@ Solve 2st order differential equation
 
 Test
 ----
-Run 'npm install' and 'npm test' in the projects main directory
+
+Run 'npm install' and 'grunt test' in the projects main directory
 
 
-Contributors
-------------
+License
+-------
 
-* lethexa 
-
+This library is published under MIT-license.
 
